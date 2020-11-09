@@ -17,6 +17,7 @@ public class BankAccount {
         this.owner = owner;
         this.balance = balance;
     }
+   
     
     public String getOwner(){
         return owner;
@@ -24,5 +25,13 @@ public class BankAccount {
     
     public int getBalance(){
         return balance;
+    }
+    
+    public void setOwner(String owner){
+        this.owner = owner;
+    }
+    
+    public void setBalance(int balance){
+        this.balance = balance;
     }
 }
