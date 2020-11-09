@@ -59,7 +59,7 @@ public class TestTrackJFrame extends javax.swing.JFrame {
 
         jLabel3.setText("Type");
 
-        comboCarType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Electric car", "Diesel car" }));
+        comboCarType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Electric car", "Diesel car", "Otto car" }));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -168,7 +168,12 @@ public class TestTrackJFrame extends javax.swing.JFrame {
             ElectricCar c = new ElectricCar(name, speed);
             track.addCar(c);
             jTextArea1.append("New electric car added.\n");
-        }else if (type.equals("Diesel car")){
+        }else if(type.equals("Otto car")){
+            OttoCar c = new OttoCar(name, speed);
+            track.addCar(c);
+            jTextArea1.append("New Otto car added.\n");
+        }
+        else if (type.equals("Diesel car")){
             DieselCar c = new DieselCar(name, speed);
             track.addCar(c);            
             jTextArea1.append("New diesel car added.\n");
