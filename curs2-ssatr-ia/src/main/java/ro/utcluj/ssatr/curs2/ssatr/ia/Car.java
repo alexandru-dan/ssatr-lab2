@@ -13,7 +13,7 @@ public class Car {
     //atribute
     private String name;
     public  int speed;
-    public String plate;
+    private String plate;
     
     //constructori
     Car(String name, int speed, String plate){

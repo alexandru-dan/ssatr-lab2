@@ -37,7 +37,7 @@ public class TestTrack {
        String all = "";
        for(Car c: cars){ 
            if(c!=null){
-            String line = "Car: "+c.getName()+ " with plate number: " + c.plate +" has the current speed equal to: "+c.speed+"\n";
+            String line = "Car: "+c.getName()+ " with plate number: " + c.getPlate() +" has the current speed equal to: "+c.getSpeed()+"\n";
             all=all+line;
            }
        }

@@ -63,6 +63,12 @@ public class TestTrackJFrame extends javax.swing.JFrame {
 
         comboCarType.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Electric car", "Diesel car", "Otto car" }));
 
+        testFieldPlate.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                testFieldPlateActionPerformed(evt);
+            }
+        });
+
         jLabel4.setText("Plate");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -176,7 +182,7 @@ public class TestTrackJFrame extends javax.swing.JFrame {
         String name = this.testFieldName.getText();
         int speed = Integer.parseInt(this.testFieldSpeed.getText());
         String type = this.comboCarType.getSelectedItem().toString();
-        String plate = this.testFieldName.getText();
+        String plate = this.testFieldPlate.getText();
                
         if(type.equals("Electric car")){
             ElectricCar c = new ElectricCar(name, speed, plate);
@@ -202,6 +208,10 @@ public class TestTrackJFrame extends javax.swing.JFrame {
         this.jTextArea1.append(track.getAllCarsDetails());
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void testFieldPlateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_testFieldPlateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_testFieldPlateActionPerformed
 
     /**
      * @param args the command line arguments
